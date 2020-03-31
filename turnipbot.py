@@ -4,6 +4,7 @@ import time
 import aioschedule as schedule
 import datetime
 import asyncio
+import creds
 
 from discord.ext import commands, tasks
 
@@ -91,4 +92,4 @@ def printDictionary(dict):
 def clearMap():
     turnipPrices.clear()
 
-bot.run("NjkzODk1NTgwNTM5NDIwNzAy.XoD2xg.ZAl9-E7siQh-1CHCL-z4lmWd1WA")
+bot.run(client_secret)
