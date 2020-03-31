@@ -20,10 +20,10 @@ async def on_ready():
 @bot.command(pass_context=True)
 async def report(ctx):
     if not bool(turnipPrices):
-        await ctx.message.author.send( "Oh no! No one has reported any turnip prices! Maybe you can be the first?")
+        await ctx.message.channel.send( "Oh no! No one has reported any turnip prices! Maybe you can be the first?")
         await ctx.message.add_reaction("\U0001F44D")
     else:
-        await ctx.message.author.send("Here are your turnip prices for the day! \n{}".format(printDictionary(turnipPrices)))
+        await ctx.message.channel.send("Here are the current turnip prices! \n{}".format(printDictionary(turnipPrices)))
         await ctx.message.add_reaction("\U0001F44D")
 
 @bot.command(pass_context=True)
