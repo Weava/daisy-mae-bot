@@ -1,10 +1,9 @@
 
 import discord
 import time
-import aioschedule as schedule
 import datetime
 import asyncio
-import creds
+from creds import client_secret
 
 from discord.ext import commands, tasks
 
