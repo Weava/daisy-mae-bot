@@ -1,0 +1,8 @@
+{
+	"name": "Turnip Bot",
+	"version": "1.0.0",
+	"description": "Takes and reports turnip prices for the game AC:NH",
+	"main": "turnipbot.js",
+	"author": "Weava",
+	"dependencies": {}
+}
