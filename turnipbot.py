@@ -64,7 +64,7 @@ async def letsTalk(ctx):
 async def thanks(ctx):
     await ctx.message.author.send("Thank you for using me for all your stalk market needs! I'm still a little new at this and not quite fully up to speed yet, so let me know if there's anything I can improve on by sending a letter to my assistant, Weava.")
 
-@tasks.loop(seconds=5.0)
+@tasks.loop(seconds=60.0)
 async def printReport():
     currentTime = datetime.datetime.now()
     firstTurnipTime = currentTime.replace(hour=15, minute=30, second=0, microsecond=0)
