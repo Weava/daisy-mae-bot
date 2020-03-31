@@ -21,10 +21,8 @@ async def on_ready():
 async def report(ctx):
     if not bool(turnipPrices):
         await ctx.message.channel.send( "Oh no! No one has reported any turnip prices! Maybe you can be the first?")
-        await ctx.message.add_reaction("\U0001F44D")
     else:
         await ctx.message.channel.send("Here are the current turnip prices! \n{}".format(printDictionary(turnipPrices)))
-        await ctx.message.add_reaction("\U0001F44D")
 
 @bot.command(pass_context=True)
 async def help(ctx):
