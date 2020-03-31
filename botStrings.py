@@ -19,6 +19,6 @@ error_too_high = "The stalk market isn't THAT good. Maybe try something a bit sm
 
 error_invalid_input ="I only take and report turnip prices. Are you confusing me with someone else?"
 
-lets_talk = "You are a beautiful, lovely person, and you make everyone around you shine!")
+lets_talk = "You are a beautiful, lovely person, and you make everyone around you shine!"
 
 thanks_copy = "Thank you for using me for all your stalk market needs! I'm still a little new at this and not quite fully up to speed yet, so let me know if there's anything I can improve on by sending a letter to my assistant, Weava."
