@@ -57,6 +57,7 @@ async def thanks(ctx):
 
 @tasks.loop(seconds=60.0)
 async def printReport():
+    # TODO: Stop using thresholding and create some sort of scheduler service
     currentTime = datetime.datetime.now()
     firstTurnipTime = currentTime.replace(hour=15, minute=30, second=0, microsecond=0)
     firstTurnipTimeEnd = currentTime.replace(hour=15, minute=31, second=0, microsecond=0)
